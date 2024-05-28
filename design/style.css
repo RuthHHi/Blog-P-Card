@@ -1,0 +1,96 @@
+:root {
+    --black: hsl(0, 0%, 7%);
+    --yellow: hsl(47, 88%, 63%);
+    --grey: hsl(0, 0%, 50%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body{
+    font-family: Figtree;
+    background: hsl(47, 88%, 63%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+.image img {
+    width: 100%;
+    border-radius: 5%;
+   /*  padding-inline-start: 38px; */
+}
+
+
+.card {
+    background: var(--white);
+    color: var(--black);
+    font-weight: 800;
+    padding: 1rem;
+    border-radius: 3%;
+    border: 2px var(--black);
+    max-width: 18rem;
+    height: 25rem;
+    box-shadow: 5px 5px 0px 0px hsl(0,0%, 7%);
+    -webkit-box-shadow: 5px 5px 0px 0px hsl(0,0%, 7%);
+    -moz-box-shadow: 5px 5px 0px 0px hsl(0,0%, 7%);
+    font-size: smaller;
+}
+
+.card h1 {
+    font-size: x-large;
+    font-weight: 800;
+}
+
+.container .card > div:hover {
+    color: hsl(47, 88%, 63%);
+    font-weight: 500;
+} 
+
+.container > div:hover {
+    bow-shadow: 10px 10px opx 0px hsl(0, 0%, 7%);
+    -webkit-box-shadow: 10px 10px 0px hsl(0, 0%, 7%);
+    -moz-box-shadow: 10px 10px 0px hsl(0, 0%, 7%);
+    transition-duration: 0.5 ease-in-out;
+    cursor: pointer;
+    
+}
+
+.grey p{
+    color: var(--grey);
+    font-weight: 500;
+}
+
+button {
+    border-radius: 5px;
+    background: var(--yellow);
+    border: none;
+    font-family: Figtree;
+    margin-top: .5rem;
+    padding: .2rem .5rem;
+    font-weight: 800;
+}
+
+.card-id {
+    display: flex;
+    flex-direction: rows;
+    align-items: center;
+    justify-content: flex-start;
+    justify-items:stretch ;
+    gap: 1rem;
+}
+.card-id img {
+    width: 40px;
+}
+
+
+
+@font-face {
+    font-family: Figtree;
+    src: url(../assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+
+
